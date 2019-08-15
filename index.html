@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button w3-xlarge"><b>RUST</b></a>
+  <div class="w3-bar w3-black w3-wide  w3-card">
+    <a href="#home" class="w3-bar-item w3-button w3-xxlarge"><b>RUST</b></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button w3-padding">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-24">About</a>
+      <a href="#weapons" class="w3-bar-item w3-button w3-padding-24">Weapons</a>
+      <a href="#map" class="w3-bar-item w3-button w3-padding-24">Map</a>
     </div>
   </div>
 </div>
@@ -23,80 +24,35 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:100%;" id="home">
   <img class="w3-image" src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2F6io9bdnhsj611.fw.png?v=1560723285388" alt="hero landscape" width="100%" height="800">
   <div class="w3-margin-top w3-display-middle">
-    <h1 class="w3-xxxlarge w3-text-white w3-padding-24"><b>RAID</b> </h1>
-    <h2 class="w3-xxxlarge w3-text-white w3-padding-24"><b>PVP</b> </h2>
-    <h3 class="w3-xxxlarge w3-text-white w3-padding-24"><b>SURVIVE</b></h3>
+    <h1 class="raid" style="color:white;"><b>RAID</b> </h1>
+    <h2 class="pvp"  style="color:white;"><b>PVP</b> </h2>
+    <h3 class="survive" style="color:white;"><b>SURVIVE</b></h3>
   </div>
 </header>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="w3-content w3-padding w3-dark-grey" style="max-width:100%">
 
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  <!-- Project  Section -->
+  <div class="w3-container w3-padding-32 w3-dark-grey" id="about">
+    <h3 class=" w3-border-light-grey w3-padding-16 w3-xxlarge">About</h3>
   </div>
 
   <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-col 13 m4 w3-margin-bottom ">
+     
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2Farticle-rust-survival-tips-sunset.jpg?v=1560724001549" 
-             alt="place holder image" title="dummy image" style="width:100%">
+        
+         
+         <img src="https://cdn.glitch.com/24491e37-5c36-4215-b0af-b3be049930f7%2Faboutphoto.jpg?v=1565745223232" 
+             alt="place holder image" title="dummy image" style="width:100%" class="center">
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2Farticle-rust-survival-tips-sunset.jpg?v=1560724001549" 
-             alt="place holder image" title="dummy image"  style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2Farticle-rust-survival-tips-sunset.jpg?v=1560724001549" 
-             alt="place holder image" title="dummy image"  style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div>
+   
 
   <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+  <div class="w3-container w3-padding-32" id="weapons">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Weapons</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat.
@@ -135,7 +91,7 @@
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
+  <div class="w3-container w3-padding-32" id="map">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
     <form action="/action_page.php" target="_blank">
