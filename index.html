@@ -10,12 +10,16 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-wide  w3-card">
-    <a href="#home" class="w3-bar-item w3-button w3-xxlarge"><b>RUST</b></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-xxlarge"><b>RUST</b></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button w3-padding-24">About</a>
       <a href="#weapons" class="w3-bar-item w3-button w3-padding-24">Weapons</a>
       <a href="#map" class="w3-bar-item w3-button w3-padding-24">Map</a>
+      <a href="old-index.html" class="w3-bar-item w3-button w3-padding-24">old</a>
+      <a href="w3template.html" class="w3-bar-item w3-button w3-padding-24">w3template</a>
+
+
     </div>
   </div>
 </div>
@@ -24,9 +28,9 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:100%;" id="home">
   <img class="w3-image" src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2F6io9bdnhsj611.fw.png?v=1560723285388" alt="hero landscape" width="100%" height="800">
   <div class="w3-margin-top w3-display-middle">
-    <h1 class="raid" style="color:white;"><b>RAID</b> </h1>
-    <h2 class="pvp"  style="color:white;"><b>PVP</b> </h2>
-    <h3 class="survive" style="color:white;"><b>SURVIVE</b></h3>
+    <h3 class="raid" style="color:white;"><b>RAID</b> </h3>
+    <h3 class="raid"  style="color:white;"><b>PVP</b> </h3>
+    <h3 class="raid" style="color:white;"><b>SURVIVE</b></h3>
   </div>
 </header>
 
@@ -35,21 +39,45 @@
 
   <!-- Project  Section -->
   <div class="w3-container w3-padding-32 w3-dark-grey" id="about">
-    <h3 class=" w3-border-light-grey w3-padding-16 w3-xxlarge">About</h3>
+    <h4 class=" w3-border-light-grey w3-padding-16 ">About</h4>
   </div>
 
-  <div class="w3-row-padding">
+  <div class="w3-row-padding"> <!-- row -->
+    
+    <!-- Images Main (Portfolio) -->
+  
+  
+  <div class="w3-row-padding w3-panel w3-padding-16 w3-dark-gray" >
+    
+    <!-- section with 3 columns - centre pictures -->
     <div class="w3-col 13 m4 w3-margin-bottom ">
      
-      <div class="w3-display-container">
-        
-         
-         <img src="https://cdn.glitch.com/24491e37-5c36-4215-b0af-b3be049930f7%2Faboutphoto.jpg?v=1565745223232" 
-             alt="place holder image" title="dummy image" style="width:100%" class="center">
-      </div>
-    </div>
-   
+              <div class="w3-display-container ">
+          <!-- Col 1 empty div -->  
+              </div>
+            </div>
 
+            <div class="w3-col 13 m4 w3-margin-bottom "> <!-- middle div --> 
+              <div class="w3-display-container ">
+                 <img src="https://cdn.glitch.com/24491e37-5c36-4215-b0af-b3be049930f7%2Faboutphoto.jpg?v=1565745223232" 
+                     alt="place holder image" title="dummy image" style="width:100%" class="center">
+              </div>
+            </div>
+
+            <div class="w3-col 13 m4 w3-margin-bottom ">     
+              <div class="w3-display-container ">
+        <!-- Col 3 empty div -->     
+              </div>
+            </div>
+    
+  </div> <!-- end of row -->
+  
+  
+  
+
+
+  
+ 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="weapons">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Weapons</h3>
@@ -59,6 +87,30 @@
     </p>
   </div>
 
+    
+    <!-- slideshow -->
+ <div class="w3-container">
+  <h2>Slideshow Indicators</h2>
+  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+</div>
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2Fdownload.png?v=1557976138949" style="width:100%">
+  <img class="mySlides" src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2Fff906ff8a347.png?v=1560723889401" style="width:100%">
+  <img class="mySlides" src="https://cdn.glitch.com/46a912be-e04c-4158-b94a-2d6ab5ffb9ef%2FDWHFQgZX0AANC0d.jpg?v=1560724533874" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+    
+    
   <div class="w3-row-padding w3-grayscale">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/w3images/team2.jpg" alt="John" style="width:100%">
@@ -118,6 +170,36 @@
 <footer class="w3-center w3-black w3-padding-16">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+<!-- slideshow javascript-->
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script> 
+  
+  
 </body>
 </html>
